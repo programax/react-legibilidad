@@ -1,34 +1,24 @@
 /* eslint-disable */
 
-const allMenus = [
-    {
-        // ...
-        categories: [
-            {
-                // ...
-                items: [
-                    {
-                        // ...
-                        price: 1,
-                        options: [
-                            {
-                                // ...
-                                price: 1,
-                            },
-                        ],
-                    }
-                ],
-            },
-        ],
-    },
-];
-
 function doSomething(menus, newItem) {
+    const targetMenu = {};
     for (const menu of menus) {
         for (const category of menu.categories) {
             for (const item of category.items) {
                 for (const option of item.options) {
-                    // TODO
+                    const newItemOptions = newItem.options;
+
+                    // ...
+
+                    for (const newItemOption of newItemOptions) {
+                        // ...
+                        // ...
+                        // ...
+                        // ...
+                        if (newItemOption.id === option.id && menu === targetMenu) {
+
+                        }
+                    }
                 }
             }
         }
@@ -36,6 +26,7 @@ function doSomething(menus, newItem) {
 }
 
 function doSomething(mnus, nItm) {
+    const tMnu = {};
     for (const mnu of mnus) {
         for (const cat of m.categories) {
             for (const itm of ca.items) {
@@ -49,15 +40,7 @@ function doSomething(mnus, nItm) {
                         // ...
                         // ...
                         // ...
-                        // ...
-                        // ...
-                        if (op.name.replace('', 'a')) {
-                            // ...
-                        }
-                        // ...
-                        // ...
-                        // ...
-                        if (op.id === opt.id && mnu === ID) {
+                        if (op.id === opt.id && mnu === tMnu) {
 
                         }
                     }

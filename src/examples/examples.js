@@ -20,3 +20,12 @@ function foo() {
     // ...
     // ...
 }
+
+function getUrlParams() {
+    return document.location.search.replace('?', '').split('&').reduce((map, param) => {
+        const parts = param.split('=');
+        map[parts[0]] = parts[1];
+        return map;
+    }, {});
+}
+
